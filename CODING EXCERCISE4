@@ -1,0 +1,86 @@
+package Excercise1;
+
+import java.util.Scanner;
+
+public class Excercise7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Write a program which calculates marks on basis of given grades in java using switch statement
+		 * if marks >=90 then Excellent: Grade A
+		 * if marks >=90 and less than 80  then Very Good: Grade B  
+		 * if marks >=80 and less than 70 then Good: Grade C 
+		 * if marks >=70 and less than 60 then Good: Grade D
+		 * if marks >=60 and less than 50 then Good: Grade E
+		 * if marks <=50 and less than 40 then Just Passed: Grade F
+		 * if any other marks then print Failed!
+		 * System.out.println("Enter percentage marks");
+		 */
+		
+		
+		int m ;
+		 Scanner input = new Scanner(System.in);
+		 System.out.println("Enter percentage marks");
+		 m = input.nextInt();
+		 
+		 if(m>=90) 
+		 {
+			 System.out.println(" Excellent: Grade A");
+		 }
+		 else if((m<90)&&(m>=80)) 
+		 {
+			 System.out.println("Very Good: Grade B ");
+		 }
+		 else if((m<80)&&(m>=70))
+		 {
+			 System.out.println("Good: Grade C");
+		 }
+		 
+		 else if((m<70)&&(m>=60))
+		 {
+			 System.out.println("Good: Grade D");
+		 }
+		 else if((m<50)&&(m>=60))
+		 {
+			 System.out.println("Good: Grade E");
+		 }
+		 else if((m<60)&&(m>=50))
+		 {
+			 System.out.println("Just Passed: Grade F");
+		 }
+		 else
+		 {
+			 System.out.println("Failed!!!");
+		 }
+			 
+		 
+		 
+		 
+		switch (m/10)
+		{
+		 case 9 :
+		    System.out.println("Excellent: Grade A");
+		    break;
+		 case 8 :
+		    System.out.println("Very Good: Grade B "); 
+		    break;
+		 case 7 :
+		    System.out.println("Good: Grade C");
+		    break;
+		 case 6 :
+			System.out.println("Good: Grade D");
+			break;
+		 case 5 :
+			System.out.println("Good: Grade E");
+			break;
+		 case 4 :
+			System.out.println("Good: Grade F");
+			break;
+		 default:
+		   System.out.println("No in switch case number");
+		   } 
+		
+	}
+
+}
