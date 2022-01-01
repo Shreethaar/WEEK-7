@@ -1,0 +1,42 @@
+Please insert student name :CC
+Please insert student matric number :9879879
+Please re-enter your student matric number :
+Please insert student matric number :284508
+Your have been approved
+Please insert your inasis :None
+Please insert your contact number(Example:601234567890) :60123456789
+Please insert the number of book that you wish to borrow :3
+
+Still have :1
+Please insert the type of book that you wish to borrow (Fiction,Non_Fiction,Encyclopaedia) :Fiction
+Please insert the name of book that you wish to borrow :SKIP
+Please insert the quantity of book that you wish to borrow :1
+Total Fee : RM0.2
+Still have :2
+Please insert the type of book that you wish to borrow (Fiction,Non_Fiction,Encyclopaedia) :Non_Fiction
+Please insert the name of book that you wish to borrow :SKIK
+Please insert the quantity of book that you wish to borrow :2
+Total Fee need to pay: RM1.0
+Still have :3
+Please insert the type of book that you wish to borrow (Fiction,Non_Fiction,Encyclopaedia) :Encyclopaedia
+Please insert the name of book that you wish to borrow :3
+Please insert the quantity of book that you wish to borrow :3
+Total Fee : RM3.0
+========================================================================================
+========================================================================================
+=============================WELCOME TO UUM BOOK STORE==================================
+========================================================================================
+========================================================================================
+
+Student Name : CC
+Student Inasis : None
+Student Matric Number : 284508
+Student Contact Number : 60123456789
+Student Inasis : None
+=========================================================================================
+No======Name Of Book=============Type Of Book===========Quantity of Book==============Fee
+1       SKIP                     Fiction                1.0            		0.2
+2       SKIK                     Non_Fiction                2.0            		1.0
+3       3                     Encyclopaedia                3.0            		3.0
+========================================================================================
+You have to pay :RM4.2
