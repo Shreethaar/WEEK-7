@@ -1,0 +1,97 @@
+package week7;
+
+import java.util.Scanner;
+
+public class self {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=1;
+		while (i<5){
+		  System.out.print(i + "");
+		  i++;   
+		}
+		int sum=0, number =1;
+		  while (number <= 10)
+		  {
+			sum+=number;
+			number = number + 5;
+			System.out.println("SUM :" + sum);
+		  }
+		  System.out.println("Good Bye");
+		  
+		   i=0;
+			do{
+				System.out.print(i + "");
+				i++;
+			}while(i<=3);
+
+
+		  sum=0; number =2;
+			do{
+				sum+=number;
+				number = number + 5;
+		    System.out.println("SUM :" + sum);
+				} while (number <= 10);
+
+			
+		     for (i=1; i<5; i++)
+				  System.out.print(i);
+
+		     for (i=1; i<3; i++){
+		 		System.out.print("YAHOO" + "");
+		 		System.out.print("***");
+		 	}
+		     int num1, num2;
+		     for(num2 = 0; num2 <= 2; num2++)
+		     { 
+		    	 for(num1 = 0; num1 <= 1; num1++) 
+		    	 {
+		    		    System.out.println(num2 + " " + num1);
+		    		    }
+		    	 } 
+		     int num =1;
+				while (num < 10)
+				{
+					System.out.print (num);
+					num = num +2;   
+				}
+				
+				Scanner input = new Scanner(System.in);
+				System.out.print("Enter an Integer, or -1 to stop: ");
+				int choice= input.nextInt();
+				while (choice!=-1)
+				{
+					System.out.println("INSIDE LOOPING");
+					System.out.print("Enter an Integer, or -1 to stop: ");
+					choice= input.nextInt();  
+					}
+				 System.out.println("Sentinel value detected. Good Bye.");
+
+					 choice=1; int total=0;
+					while (choice <4){
+						total = choice++;
+						System.out.print(total);	}
+
+				 for ( number =2; number <20; number++)	
+					{
+						number = number *2;
+						if (number <15)
+							System.out.println(number);}
+					
+	
+				 i=1;
+					do {	
+							if ((i % 2)== 0)
+							System.out.print(i);
+							i++;
+						} while(i<5);
+
+	
+	
+
+
+
+	}
+
+}
