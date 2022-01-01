@@ -1,0 +1,215 @@
+package BookStore;
+
+import java.util.Scanner;
+
+public class bookStore {
+
+	public static void main(String[] args) {
+		String name,inasis,type,nameb,phone;
+		int matric=0,nb=0,select;
+		int looping=1;
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.print("\n=============================WELCOME TO UUM BOOK STORE==================================");
+		System.out.print("\nPlease Select Which Action You Wish To Do (1-Rent Book,2-Return Book)");
+		select=input.nextInt();
+		switch (select)
+		{
+		 case 1 :
+				returnBook();
+				break;
+		   
+		 case 2 :
+				System.out.print("Please insert student name :");
+				name=input.nextLine();
+				
+				do{
+					System.out.print("Please insert student matric number :");
+					matric=input.nextInt(); 
+					if(matric<=999999) {
+					System.out.println("Your have been approved");
+					System.out.print("Please insert your inasis :");
+					inasis=input.next();
+					System.out.print("Please insert your contact number(Example:601234567890) :");
+					phone=input.next();
+					System.out.print("Please insert the number of book that you wish to borrow :");
+					nb = input.nextInt(); 
+					String[] arrayOfType = new String[nb]; //Create a string array to store the type of book
+					String[] arrayOfBook = new String[nb]; //Create a string array to store the names of book
+					Double[] arrayOfQuantity = new Double[nb]; //Create a string array to store the quantity of book
+					Double[] arrayOfPrice = new Double[nb]; //Create a string array to store the price of book
+
+					double arrayOfTotal = 0.0;
+					 for (int i= 0; i<nb; i++) { 
+						 arrayOfPrice[i]=0.0;
+						 System.out.print("\nStill have :"+(i+1));
+						 System.out.print("\nPlease insert the type of book that you wish to borrow (Fiction,Non_Fiction,Encyclopaedia) :");	
+						 arrayOfType[i] = input.next(); 
+						 System.out.print("Please insert the name of book that you wish to borrow :");
+						 arrayOfBook[i] = input.next(); 
+						 System.out.print("Please insert the quantity of book that you wish to borrow :");
+						 arrayOfQuantity[i] = input.nextDouble();
+						 
+						 if(arrayOfType[i].equals("Fiction"))
+						 {
+							double price=0.2;
+							arrayOfPrice[i]= price * arrayOfQuantity[i];
+							System.out.print("Total Fee : RM"+ arrayOfPrice[i]);
+							 
+						 }
+						 else if (arrayOfType[i].equals("Non_Fiction"))
+						 {
+							 double price=0.5; 
+							 arrayOfPrice[i]= price * arrayOfQuantity[i];
+							 System.out.print("Total Fee need to pay: RM"+ arrayOfPrice[i]);
+							 
+						 }
+						 else if (arrayOfType[i].equals("Encyclopaedia"))
+						 {
+							 double price=1.0;
+							 arrayOfPrice[i]= price * arrayOfQuantity[i];
+							 System.out.print("Total Fee : RM"+ arrayOfPrice[i]);
+							 
+						 }
+						 else
+						 {
+							 System.out.println("\nError Occur,Please try again");
+						 }
+						 
+						arrayOfTotal += arrayOfPrice[i];
+					
+					 }
+					 
+				System.out.print("\n========================================================================================");
+				System.out.print("\n========================================================================================");
+				System.out.print("\n=============================WELCOME TO UUM BOOK STORE==================================");
+				System.out.print("\n========================================================================================");
+				System.out.print("\n========================================================================================");
+				System.out.print("\n");
+				System.out.print("\nStudent Name : "+name);
+				System.out.print("\nStudent Inasis : "+inasis);
+				System.out.print("\nStudent Matric Number : "+matric);
+				System.out.print("\nStudent Contact Number : "+phone);
+				System.out.print("\nStudent Inasis : "+inasis+"\n");
+				
+				System.out.println("=========================================================================================");
+				System.out.println("No======Name Of Book=============Type Of Book===========Quantity of Book==============Fee");
+				 for (int i = 0; i < nb; i++) 
+				 { 
+					System.out.println((i+1)+"       "+arrayOfBook[i]+"                     "+arrayOfType[i]+"                "+arrayOfQuantity[i]+"            \t\t"+arrayOfPrice[i]); 
+				 }
+				 System.out.println("========================================================================================");
+				 System.out.println("You have to pay :RM" +arrayOfTotal); 
+
+						} 
+					else
+					{
+					System.out.println("Please re-enter your student matric number :");	
+					}
+				}
+				while(matric>=999999);
+		    break;
+		 default:
+		   System.out.println("No in selection,Bye!!! ");
+			System.exit(0);
+
+			
+		  }
+       }
+	
+	static void returnBook() {
+		
+			String name,inasis,type,nameb,phone;
+			int matric=0,nb=0,select;
+			int looping=1;
+			Scanner input= new Scanner(System.in);
+			 System.out.print("Please insert student name :");
+				name=input.nextLine();
+		do{
+			System.out.print("Please insert student matric number :");
+			matric=input.nextInt(); 
+			if(matric<=999999) {
+			System.out.println("Your have been approved");
+			System.out.print("Please insert your inasis :");
+			inasis=input.next();
+			System.out.print("Please insert your contact number(Example:601234567890) :");
+			phone=input.next();
+			System.out.print("Please insert the number of book that you wish to return :");
+			nb = input.nextInt(); 
+			String[] arrayOfType = new String[nb]; //Create a string array to store the type of book
+			String[] arrayOfBook = new String[nb]; //Create a string array to store the names of book
+			Double[] arrayOfQuantity = new Double[nb]; //Create a string array to store the quantity of book
+			Double[] arrayOfPrice = new Double[nb]; //Create a string array to store the price of book
+
+			double arrayOfTotal = 0.0;
+			 for (int i= 0; i<nb; i++) { 
+				 arrayOfPrice[i]=0.0;
+				 System.out.print("\nStill have :"+(i+1));
+				 System.out.print("\nPlease insert the type of book that you wish to borrow (Fiction,Non_Fiction,Encyclopaedia) :");	
+				 arrayOfType[i] = input.next(); 
+				 System.out.print("Please insert the name of book that you wish to return :");
+				 arrayOfBook[i] = input.next(); 
+				 System.out.print("Please insert the quantity of book that you wish to return :");
+				 arrayOfQuantity[i] = input.nextDouble();
+				 
+				 if(arrayOfType[i].equals("Fiction"))
+				 {
+					double price=0.2;
+					arrayOfPrice[i]= price * arrayOfQuantity[i];
+					System.out.print("Total Fee : RM"+ arrayOfPrice[i]);
+					 
+				 }
+				 else if (arrayOfType[i].equals("Non_Fiction"))
+				 {
+					 double price=0.5; 
+					 arrayOfPrice[i]= price * arrayOfQuantity[i];
+					 System.out.print("Total Fee need to pay: RM"+ arrayOfPrice[i]);
+					 
+				 }
+				 else if (arrayOfType[i].equals("Encyclopaedia"))
+				 {
+					 double price=1.0;
+					 arrayOfPrice[i]= price * arrayOfQuantity[i];
+					 System.out.print("Total Fee : RM"+ arrayOfPrice[i]);
+					 
+				 }
+				 else
+				 {
+					 System.out.println("\nError Occur,Please try again");
+				 }
+				 
+				arrayOfTotal += arrayOfPrice[i];
+			
+			 }
+			 
+		System.out.print("\n========================================================================================");
+		System.out.print("\n========================================================================================");
+		System.out.print("\n=============================WELCOME TO UUM BOOK STORE==================================");
+		System.out.print("\n========================================================================================");
+		System.out.print("\n========================================================================================");
+		System.out.print("\n");
+		System.out.print("\nStudent Name : "+name);
+		System.out.print("\nStudent Inasis : "+inasis);
+		System.out.print("\nStudent Matric Number : "+matric);
+		System.out.print("\nStudent Contact Number : "+phone);
+		System.out.print("\nStudent Inasis : "+inasis+"\n");
+		
+		System.out.println("=========================================================================================");
+		System.out.println("No======Name Of Book=============Type Of Book===========Quantity of Book==============Fee");
+		 for (int i = 0; i < nb; i++) 
+		 { 
+			System.out.println((i+1)+"       "+arrayOfBook[i]+"                     "+arrayOfType[i]+"                "+arrayOfQuantity[i]+"            \t\t"+arrayOfPrice[i]); 
+		 }
+		 System.out.println("========================================================================================");
+		 System.out.println("You have to pay :RM" +arrayOfTotal); 
+
+				
+			
+			}
+			else
+			{
+			System.out.println("Please re-enter your student matric number :");	
+			}
+			}while(matric>=999999);
+	}
+	}
