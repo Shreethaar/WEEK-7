@@ -1,0 +1,91 @@
+package Excercise1;
+
+import java.util.Scanner;
+
+public class Exercise6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*if Grade A then  marks >=90
+				 * if Grade B then marks >=80 and less than 90
+				 * if Grade C then marks >=70 and less than 80
+				 * if Grade D then marks >=60 and less than 70
+				 * if Grade E then marks >=50 and less than 60
+				 * if Grade F then marks <=40*/
+		
+		char ch;
+		 Scanner input = new Scanner(System.in);
+	
+		 System.out.print("Enter grade from (A, B, C, D, E or F) : ");
+		/* String str=input.next();
+		 ch=str.charAt(0);*/
+		 ch= input.next().charAt(0);
+		 
+		 if(ch=='A') 
+		 {
+			 System.out.println("marks >=90");
+		 }
+		 else  if(ch=='B') 
+		 {
+			 System.out.println("marks >=80 and less than 90");
+		 }
+		 
+		 else  if(ch=='C') 
+		 {
+			 System.out.println("marks >=70 and less than 80");
+		 }
+		 
+		 else  if(ch=='D') 
+		 {
+			 System.out.println(" marks >=60 and less than 70");
+		 }
+		 
+		 else  if(ch=='E') 
+		 {
+			 System.out.println("marks >=50 and less than 60");
+		 }
+		 
+		 else  if(ch=='F') 
+		 {
+			 System.out.println("marks <=40");
+		 }
+		 
+		 else
+		 {
+			 System.out.println("Invalid Gred"); 
+		 }
+		 
+		switch (ch)
+		{
+		 case 'A' :
+		    System.out.println("Your Gred is A");
+		    break;
+
+		 case 'B' :
+		    System.out.println("Your Gred is B"); 
+		    break;
+
+		 case 'C' :
+		    System.out.println("Your Gred is C");
+		    break;
+		 
+		 case 'D' :
+			System.out.println("Your Gred is D");
+			break;
+
+		case 'E' :
+			System.out.println("Your Gred is E"); 
+		    break;
+
+		case 'F' :
+			System.out.println("Your Gred is F");
+			break;
+
+		 default:
+		   System.out.println("Invalid Gred");
+		   break;
+		} 
+
+	}
+
+}
