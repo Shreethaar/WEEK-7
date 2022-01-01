@@ -1,0 +1,131 @@
+package Excercise1;
+import java.util.Scanner;
+public class Excercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  int num1,num2,total;
+		  String name1,name2;
+		  Scanner input = new Scanner(System.in);
+		  	System.out.println("Enter First subject Name:");
+		  	name1=input.next();
+		    System.out.println("Enter First subject Mark:");
+		    num1 = input.nextInt();
+		    System.out.println("Enter Second subject Name:");
+		  	name2=input.next();
+		    System.out.println("Enter Second subject Mark:");
+		    num2 = input.nextInt();
+
+		    
+		    if ( num1 > num2 )
+		    {
+		        System.out.println("Your first subject is bigger then second subject");
+		    	System.out.printf("First Subject "+name1 +" is bigger then "+name2+"\n" );
+		    	
+		    	if(num1>=50) 
+		    	{
+		    		 System.out.println("Calon dikira lulus");
+		    		 System.out.println("First subject "+name1 +" is more then 50");
+		    		 if(num2>=50)
+		    		 {
+		    			 System.out.println("Calon dikira lulus");
+		    			 System.out.println("Second subject "+name2 +" is more then 50");
+		    		 }
+		    		 else
+		    		 {
+		    			 System.out.println("Calon dikira gagal"); 
+		    			 System.out.println("Second subject "+name2 +" is less then 50");
+		    		 }
+		    	}
+		    	else
+		    	{
+		    		 System.out.println("Calon dikira gagal");
+		    		 if(num2>=50)
+		    		 {
+		    			 System.out.println("Calon dikira lulus");
+		    			 System.out.println("Second subject "+name2 +" is more then 50");
+		    		 }
+		    		 else
+		    		 {
+		    			 System.out.println("Calon dikira gagal"); 
+		    			 System.out.println("Second subject "+name2 +" is less then 50");
+		    		 }
+		    	}
+		    	total=(num1+num2)/2;
+		    	if (total>=80 && total<=100)
+		    	{
+		    		 System.out.println("Gred A"); 
+		    	}
+		    	else if (total>=60 && total<=79)
+		    	{
+		    		System.out.println("Gred B"); 
+		    	}
+		    	else if (total>=50 && total<=59)
+		    	{
+		    		System.out.println("Gred C"); 
+		    	}
+		    	else
+		    	{
+		    		System.out.println("Gagal "); 
+		    	}
+		    }
+		    
+		    else
+		    {
+		        System.out.println("Your second subject is bigger then first subject");
+		    	System.out.printf("Second Subject "+name2 +" is bigger then "+name1 +"\n");
+		    	
+		    	
+		    	if(num1>=50) 
+		    	{
+		    		 System.out.println("Calon dikira lulus");
+		    		 System.out.println("First subject "+name1 +" is more then 50");
+		    		 if(num2>=50)
+		    		 {
+		    			 System.out.println("Calon dikira lulus");
+		    			 System.out.println("Second subject "+name2 +" is more then 50");
+		    		 }
+		    		 else
+		    		 {
+		    			 System.out.println("Calon dikira gagal"); 
+		    			 System.out.println("Second subject "+name2 +" is less then 50");
+		    		 }
+		    	}
+		    	else
+		    	{
+		    		 System.out.println("Calon dikira gagal");
+		    		 if(num2>=50)
+		    		 {
+		    			 System.out.println("Calon dikira lulus");
+		    			 System.out.println("Second subject "+name2 +" is more then 50");
+		    		 }
+		    		 else
+		    		 {
+		    			 System.out.println("Calon dikira gagal"); 
+		    			 System.out.println("Second subject"+name2 +"is less then 50");
+		    		 }
+		    	}
+		    	total=(num1+num2)/2;
+		    	if (total>=80 && total<=100)
+		    	{
+		    		 System.out.println("Gred A"); 
+		    	}
+		    	else if (total>=60 && total<=79)
+		    	{
+		    		System.out.println("Gred B"); 
+		    	}
+		    	else if (total>=50 && total<=59)
+		    	{
+		    		System.out.println("Gred C"); 
+		    	}
+		    	else
+		    	{
+		    		System.out.println("Gagal "); 
+		    	}
+		    }
+		    
+		    }
+		    
+		    
+
+	}
