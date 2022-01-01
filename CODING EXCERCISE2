@@ -1,0 +1,71 @@
+package Excercise1;
+import java.util.Scanner;
+
+public class Excercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int m ;
+		char ch;
+		 Scanner input = new Scanner(System.in);
+		 System.out.println("Which switch you want to choose :10=10,20=20,30=30");
+		 m = input.nextInt();
+		 
+		 if(m==10) 
+		 {
+			 System.out.println("Your number is 10");
+		 }
+		 else if(m==20) 
+		 {
+			 System.out.println("Your number is 20");
+		 }
+		 else if(m==30) 
+		 {
+			 System.out.println("Your number is 30");
+		 }
+		 else
+		 {
+			 System.out.println("Invalid number");
+		 }
+		switch (m)
+		{
+		 case 10 :
+		    System.out.println("m=10");
+		    break;
+		 case 20 :
+		    System.out.println("m=20"); 
+		    break;
+		 case 30 :
+		    System.out.println("m=30");
+		    break;
+		 default:
+		   System.out.println("No in switch case number");
+		   } 
+
+		
+		System.out.println("Which switch you want to choose : a=a,b=b,c=c");
+		 ch= input.next().charAt(0);
+		switch (ch)
+		{
+		 case 'a' :
+		    System.out.println("ch=a");
+		    break;
+
+		 case 'b' :
+		    System.out.println("ch=b"); 
+		    break;
+
+		 case 'c' :
+		    System.out.println("ch=c");
+		    break;
+
+		 default:
+		   System.out.println("default");
+		   break;
+		} 
+
+
+	}
+
+}
