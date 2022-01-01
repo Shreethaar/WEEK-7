@@ -1,0 +1,22 @@
+1234SUM :1
+SUM :7
+Good Bye
+0123SUM :2
+SUM :9
+1234YAHOO***YAHOO***0 0
+0 1
+1 0
+1 1
+2 0
+2 1
+13579Enter an Integer, or -1 to stop: 1
+INSIDE LOOPING
+Enter an Integer, or -1 to stop: 2
+INSIDE LOOPING
+Enter an Integer, or -1 to stop: 3
+INSIDE LOOPING
+Enter an Integer, or -1 to stop: -1
+Sentinel value detected. Good Bye.
+1234
+10
+24
